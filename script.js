@@ -10,9 +10,9 @@ let saveTimer = null;
 const byId = (id) => document.getElementById(id);
 
 function money(value) {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("en-GB", {
     style: "currency",
-    currency: "USD",
+    currency: "GBP",
     maximumFractionDigits: 2
   }).format(Number(value) || 0);
 }
